@@ -14,6 +14,7 @@ class Signup extends StatefulWidget {
 }
 
 class _Signup extends State<Signup> {
+  final _formKey = GlobalKey<FormState>();
   TextEditingController fullName = TextEditingController();
   TextEditingController bloodType = TextEditingController();
   TextEditingController emailAddress = TextEditingController();
@@ -26,8 +27,6 @@ class _Signup extends State<Signup> {
 
   @override
   Widget build(BuildContext context) {
-    final _formKey = GlobalKey<FormState>();
-
     return Scaffold(
         backgroundColor: Colors.blue,
         appBar: AppBar(
